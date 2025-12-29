@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cold Clicker</title>
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="gamestyle.css">
+</head>
+<body>
+    <section class="firstResources">
+        <p>Click Power: <span id="gains">ganhos do click</span></p>
+        
+        <div class="main-menu">
+            <h1 id="coins" class="coins">Valor de money</h1>
+        </div>
+        
+        <div class="clickingObj">
+            <img src="sources/objectColdClicker.png" height="180px" id="clicker" class="clicker"/>
+        </div>
+        
+        <div class="storeBtn">
+            <button class="open" onclick="openaStore()" type="submit">STORE</button>
+        </div>
+        
+        <div class="storeGUI" id="storeGUI">
+            <h1>Upgrades</h1>
+            
+            <div class="upgrades">
+                <button onclick="moreGains()" class="upgrade1" type="submit">+1 Gains | $20</button>
+            </div>
+            
+            <button class="close" onclick="closeStore()" type="submit">CLOSE</button>
+        </div>
+    </section>
+    
+    <p class="aviso">More updates coming soon.</p>
+    <p class="aviso">Version: 0.0.1</p>
+    
+    <footer>
+        Todos direitos reservados © Thiago Augusto 
+    </footer>
+    
+    <!-- Project JS codes -->
+    <script src="js/game.js"></script>
+</body>
+</html>
