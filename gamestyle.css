@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Boldonse&family=Bungee+Spice&family=Eater&family=Gochi+Hand&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Honk&family=Lexend:wght@100..900&family=Libertinus+Keyboard&family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&family=Playwrite+US+Trad+Guides&family=Press+Start+2P&family=Rubik+Mono+One&family=Science+Gothic:wght@100..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    
+    font-family: "Press Start 2P", monospace;
+    background: linear-gradient(0, #9099FF 70%, #1327FF);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.firstResources {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    padding: 130px 0;
+    
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 20px;
+        
+        text-align: center;
+        
+        color: #209616;
+        
+        span {
+            color: #097200;
+        }
+    }
+}
+
+.clicker {
+    opacity: 0.8;
+    
+    transition: .1s ease;
+}
+
+.clicker:active {
+    transform: scale(1.06);
+}
+
+.storeBtn {
+    padding: 50px 0;
+}
+
+.open, .close {
+    padding: 17px 29px;
+    
+    font-family: "Press Start 2P", monospace;
+    font-size: 30px;
+    
+    background: transparent;
+    border: 5px solid #0044FF;
+    border-radius: 3rem;
+    
+    display: flex;
+    text-align: center;
+    
+    transition: .4s ease;
+    
+    color: #000;
+    transition: .4s ease;
+}
+
+.open:active, .close:active {
+    color: #555;
+}
+
+.storeGUI {
+    background-color: #32A4FFAD;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
+    height: 90%;
+    min-width: 400px;
+    
+    position: absolute;
+    
+    h1 {
+        position: absolute;
+        top: 30px;
+    }
+    
+    .close {
+        position: absolute;
+        bottom: 30px;
+    }
+    
+    .upgrade1 {
+        padding: 10px 50px;
+        
+        font-family: "Press Start 2P", monospace;
+        font-size: 20px;
+        
+        border: 3px solid #3252FF;
+        border-radius: 2rem;
+        background: transparent;
+        
+        transition: .2s ease-out;
+    }
+    
+    .upgrade1:active {
+        background: #888888AD;
+    }
+}
+
+.aviso {
+    padding: 20px 0;
+    color: #0064A2;
+    
+    font-family: monospace;
+    
+    font-size: 20px;
+}
+
+footer {
+    font-size: 10px;
+    
+    position: absolute;
+    bottom: 30px;
+}
